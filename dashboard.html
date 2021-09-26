@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/utils.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css" integrity="sha512-ITS8GbPjCRA7c/PBl6Kqb9XjvQbKMBXpzEmpi7BgRwf6mUCySmHbF9opWfVUQvbdiYouDYxhxttWS+wyq4l+Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+</head>
+<body>
+       
+<main class="p-0">
+   <div class="sidebar">
+       <div class="brand-logo p-3">
+            <h4 class="text-white">TITAN TRUST</h4>
+       </div>
+       <div class="mt-4">
+            <ul class="nav-items p-0">
+                <li class="active">
+                    <a>
+                      <i class="fa fa-dashboard"></i>&nbsp; Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-calendar"></i>&nbsp; Form M
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-file"></i> &nbsp;Letters of Credit
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-area-chart"></i>&nbsp; Reports
+                    </a>
+                </li>
+            </ul>
+       </div>
+   </div>
+   <div class="page-wrapper">
+       <header class="p-3 d-flex justify-content-between border-bottom bg-white">
+            <div>
+                <h5>Dashboard</h5>
+            </div>
+           <div class="d-flex">
+               <span class="mx-2">
+                   <i class="fa fa-bell pry-color"></i>
+               </span>
+               <span class="mx-2">Adeolu Adeoye</span>
+           </div>
+       </header>
+       <div class="page-wrapper__content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="rounded bg-white p-4 shadow-sm">
+                        <h5>Form M Overview</h5>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="shadow-sm p-3 text-center">
+                                    <h6 class="text-muted">TOTAL</h6>
+                                    <p>40</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shadow-sm p-3 text-center">
+                                    <h6 class="text-success">COMPLETED</h6>
+                                    <p>25</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shadow-sm p-3 text-center">
+                                    <h6 class="text-danger">PENDING</h6>
+                                    <p>15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rounded bg-white p-4 shadow-sm">
+                        <h5>Form M Representation</h5>
+                        <div class="text-center p-4">
+                            <p>PIE CHART</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="rounded bg-white p-4 shadow-sm">
+                        <h5>LC Overview</h5>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="shadow-sm p-3 text-center">
+                                    <h6 class="text-muted">TOTAL</h6>
+                                    <p>40</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shadow-sm p-3 text-center">
+                                    <h6 class="text-success">COMPLETED</h6>
+                                    <p>25</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="shadow-sm p-3 text-center">
+                                    <h6 class="text-danger">PENDING</h6>
+                                    <p>15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rounded bg-white p-4 shadow-sm">
+                        <h5>LC Representation</h5>
+                        <div class="text-center p-4">
+                            <p>PIE CHART</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="shadow-sm rounded bg-white p-3">
+                        <div>
+                           <div class="form-group col-md-3">
+                            <label for="formSearch">Form M search </label>
+                            <select id="formSearch" class="form-control">
+                              <option selected>Search By...</option>
+                              <option>Date range</option>
+                              <option>Reference number</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group pl-3"> 
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <label>From</label>
+                                    <input type="date" class="form-control"/>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>To</label>
+                                    <input type="date" class="form-control"/>
+                                </div>
+                                <div class="col-md-2 align-self-end">
+                                    <button class="btn bg-pry text-white w-50">GO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ml-3 mt-5">
+                            <h6>Search Result</h6>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">S/N</th>
+                                        <th scope="col">Corporate name</th>
+                                        <th scope="col">Account number</th>
+                                        <th scope="col">Request type</th>
+                                        <th scope="col">Date requested</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="tr-item">
+                                        <th scope="row">1</th>
+                                        <td>Ajaguna lolade PLC</td>
+                                        <td>012234572</td>
+                                        <td>Letters of credit</td>
+                                        <td>20-10-2021</td>
+                                        <td>N55,000</td>
+                                        <td class="text-primary">View</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="shadow-sm rounded bg-white p-3">
+                        <div>
+                           <div class="form-group col-md-3">
+                            <label for="formSearch">Requests</label>
+                            <select id="formSearch" class="form-control">
+                              <option selected>All</option>
+                              <option>Date range</option>
+                              <option>Reference number</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="ml-3 mt-3">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">S/N</th>
+                                        <th scope="col">Corporate name</th>
+                                        <th scope="col">Account number</th>
+                                        <th scope="col">Request type</th>
+                                        <th scope="col">Date requested</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tr-item">
+                                            <th scope="row">1</th>
+                                            <td>Ajaguna lolade PLC</td>
+                                            <td>012234572</td>
+                                            <td>Letters of credit</td>
+                                            <td>20-10-2021</td>
+                                            <td>N55,000</td>
+                                            <td class="text-primary">View</td>
+                                        </tr>
+                                        <tr class="tr-item">
+                                            <th scope="row">2</th>
+                                            <td>Ajaguna lolade PLC</td>
+                                            <td>012234572</td>
+                                            <td>Letters of credit</td>
+                                            <td>20-10-2021</td>
+                                            <td>N55,000</td>
+                                            <td class="text-primary">View</td>
+                                        </tr>
+                                        <tr class="tr-item">
+                                            <th scope="row">3</th>
+                                            <td>Ajaguna lolade PLC</td>
+                                            <td>012234572</td>
+                                            <td>Letters of credit</td>
+                                            <td>20-10-2021</td>
+                                            <td>N55,000</td>
+                                            <td class="text-primary">View</td>
+                                        </tr>
+                                        <tr class="tr-item">
+                                            <th scope="row">4</th>
+                                            <td>Ajaguna lolade PLC</td>
+                                            <td>012234572</td>
+                                            <td>Letters of credit</td>
+                                            <td>20-10-2021</td>
+                                            <td>N55,000</td>
+                                            <td class="text-primary">View</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+   </div>
+</main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

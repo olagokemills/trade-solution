@@ -1,0 +1,78 @@
+.login-wrapper{
+    background-image: url('../images/bg/login-bg.png');
+    height:100vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.login-wrapper__overlay{
+    position: absolute;
+    height:inherit;
+    top:0;
+    width:100%;
+    background:linear-gradient(180deg, rgba(0, 21, 72, 0.8) 0%, rgba(0, 51, 102, 0.8) 100%);
+}
+
+.login-wrapper__main{
+    height: 80vh;
+}
+
+
+.underliner{
+    border-top: 5px solid #FC4E2B;
+    border-radius: 5px;
+}
+
+.sidebar{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 240px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color:#053501;
+    z-index: 1000;
+}
+.nav-items{
+    color: white;
+    margin-left: 1rem;
+}
+.nav-items li {
+    list-style: none;
+    padding: 1rem;
+}
+li a{
+    padding: 1rem;
+    cursor: pointer;
+}
+.active{
+    background:#ECECEC;
+    color: #FC4E2B;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 2px 2px 20px rgba(0, 40, 85, 0.1);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.page-wrapper{
+    padding-left: 240px;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.page-wrapper__content{
+    background-color: #E5E5E5;
+    padding: 2rem;
+    height: 100vh;
+}
+thead tr{
+    background: #00265F;
+    color: #FFFFFF;
+}
+
+.tr-item{
+    box-shadow:0px 3px 6px #468ee526;
+    background-color: #F5F5F5;
+ }

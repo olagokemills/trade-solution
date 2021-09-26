@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/utils.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css" integrity="sha512-ITS8GbPjCRA7c/PBl6Kqb9XjvQbKMBXpzEmpi7BgRwf6mUCySmHbF9opWfVUQvbdiYouDYxhxttWS+wyq4l+Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+</head>
+<body>
+       
+<main class="p-0">
+   <div class="sidebar">
+       <div class="brand-logo p-3">
+            <h4 class="text-white">TITAN TRUST</h4>
+       </div>
+       <div class="mt-4">
+            <ul class="nav-items p-0">
+                <li class="active">
+                    <a>
+                      <i class="fa fa-dashboard"></i>&nbsp; Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-calendar"></i>&nbsp; Form M
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-file"></i> &nbsp;Letters of Credit
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-area-chart"></i>&nbsp; Reports
+                    </a>
+                </li>
+            </ul>
+       </div>
+   </div>
+   <div class="page-wrapper">
+       <header class="py-3 px-4 d-flex justify-content-between border-bottom bg-white">
+            <div>
+                <h5>Dashboard</h5>
+            </div>
+           <div class="d-flex">
+               <span class="mx-2">
+                   <i class="fa fa-bell pry-color"></i>
+               </span>
+               <span class="mx-2">Adeolu Adeoye</span>
+           </div>
+       </header>
+       <div class="page-wrapper__content">
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="shadow-sm rounded bg-white p-3">
+
+                        <div class="ml-3 mt-3 mb-3">
+                            <h6>Approve Form M</h6>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">S/N</th>
+                                        <th scope="col">Corporate name</th>
+                                        <th scope="col">Account number</th>
+                                        <th scope="col">Request type</th>
+                                        <th scope="col">Date requested</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col" colspan="2">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="tr-item">
+                                        <th scope="row">1</th>
+                                        <td>Ajaguna lolade PLC</td>
+                                        <td>012234572</td>
+                                        <td>Letters of credit</td>
+                                        <td>20-10-2021</td>
+                                        <td>N55,000</td>
+                                        <td class="text-primary">
+                                           <a class="" data-toggle="modal" data-target="#exampleModal">
+                                                Approve
+                                           </a>  
+                                        </td>
+                                        <td class="text-danger">Reject</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+   </div>
+</main>
+
+
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
+        <div class="modal-body p-5">
+          <h5>Approve Form M</h5>
+          <div class="text-center">
+            <div class="d-flex justify-content-between">
+                <span class="px-3 py-2">Corporate name</span>
+                <span class="px-3 py-2 text-bold">Gani Fawehinmi PLC</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span class="px-3 py-2">Account number</span>
+                <span class="px-3 py-2 text-bold">012233889</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span class="p-3">Date Requested</span>
+                <span class="p-3 text-bold">01-22-2021</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span class="p-3">Amount</span>
+                <span class="p-3 text-bold">N55,000</span>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <div class="px-2">
+                    <button class="btn btn-outline-pry md-btn">Cancel</button>
+                </div>
+                <div class="px-2">
+                    <button class="btn bg-pry text-white md-btn">Approve</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

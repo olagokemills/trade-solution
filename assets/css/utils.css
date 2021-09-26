@@ -1,0 +1,20 @@
+.w-12{
+    width: 12%;
+}
+.bg-pry{
+    background-color: #FC4E2B;
+}
+.pry-color{
+    color: #FC4E2B;
+}
+.text-bold{
+    font-weight: bold;
+}
+.btn-outline-pry{
+    border: 1px solid #FC4E2B;
+    background-color: white;
+    color: #FC4E2B;
+}
+.md-btn{
+    width: 200px;
+}
